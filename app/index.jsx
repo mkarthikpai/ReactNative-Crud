@@ -20,7 +20,7 @@ export default function Index() {
   const [todos, setTodos] = useState(data.sort((a, b) => b.id - a.id));
   const [text, setText] = useState("");
 
-  const { colorScheme, setColorScheme, them } = useContext(ThemeContext);
+  const { colorScheme, setColorScheme, theme } = useContext(ThemeContext);
 
   const [loaded, error] = useFonts({
     Inter_500Medium,
